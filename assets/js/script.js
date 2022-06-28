@@ -1,10 +1,10 @@
 /* Author: 
 
 */
-const contents = document.querySelectorAll('.slider')
-const listitems = document.querySelectorAll('nav ul li')
+const contents = document.querySelectorAll('.content')
+const listitems = document.querySelectorAll('nav ul li a')
 
-listitems.forEach((item,idx) => {
+listitems.forEach((item, idx) => {
     item.addEventListener('click', () => {
         hideallcontents()
         hideallitems()
@@ -15,7 +15,7 @@ listitems.forEach((item,idx) => {
 })
 
 function hideallcontents(){
-    contents.forEach(slider => slider.classList.remove('show'))
+    contents.forEach(content => content.classList.remove('show'))
 }
 
 function hideallitems(){
