@@ -145,29 +145,32 @@ nav a {
 nav a:hover{
   color: #8e44ad;
 }
+.active{
+  color: #8e44ad;
+}
 
-.home::before {
+nav li a:nth-child(1)::before {
   border-radius: 50%;
   content: '\f015'; 
   font-family: "fontAwesome";
   font-size: 17px;
 }
 
-.work::before {
+nav li a:nth-child(2)::before {
   border-radius: 50%;
   content: '\f015'; 
   font-family: "fontAwesome";
   font-size: 17px;
 }
 
-.blog::before {
+nav li a:nth-child(3)::before {
   border-radius: 50%;
   content: '\f015'; 
   font-family: "fontAwesome";
   font-size: 17px;
 }
 
-.about::before {
+nav li a:nth-child(4)::before {
   border-radius: 50%;
   content: '\f015'; 
   font-family: "fontAwesome";
