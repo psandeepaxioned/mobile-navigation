@@ -106,18 +106,20 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-header{
-  background-color: #b88acb;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+header{  background-color: #b88acb; }
 
 .header{
-  position: relative;
+  height: 100vh;
   border: 3px solid #fff;
   border-radius: 15px;
+  position: relative;  
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
 }
+
+/* navbar styling started */
+
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -127,29 +129,55 @@ nav li {
   flex-basis: 25%;
   text-align: center;
 }
+
 nav {
   font-size: 12px;
+  background-color: #fff;
 }
+
 nav a {
-  text-transform: capitalize;
-  color: #777777;
   padding: 15px 0;
   display: flex;
   flex-direction: column;
+  color: #777777;
+  text-transform: capitalize;
 }
- .home::before {
+nav a:hover{
+  color: #8e44ad;
+}
+
+.home::before {
   border-radius: 50%;
   content: '\f015'; 
   font-family: "fontAwesome";
   font-size: 17px;
-  text-align: center;
 }
 
+.work::before {
+  border-radius: 50%;
+  content: '\f015'; 
+  font-family: "fontAwesome";
+  font-size: 17px;
+}
 
+.blog::before {
+  border-radius: 50%;
+  content: '\f015'; 
+  font-family: "fontAwesome";
+  font-size: 17px;
+}
 
-
-
-
+.about::before {
+  border-radius: 50%;
+  content: '\f015'; 
+  font-family: "fontAwesome";
+  font-size: 17px;
+}
+.slider {
+  display: flex;
+  flex-direction: column-reverse;
+}
+/* navbar styling ended */
 /*=================================
   Header styling ends here
 =================================*/  
