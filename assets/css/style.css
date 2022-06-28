@@ -100,18 +100,87 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 26.62%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
+header{  background-color: #b88acb; }
 
+.header{
+  height: 100vh;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  position: relative;  
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+}
 
+/* navbar styling started */
 
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
 
+nav li {
+  flex-basis: 25%;
+  text-align: center;
+}
 
+nav {
+  font-size: 12px;
+  background-color: #fff;
+}
 
+nav a {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  color: #777777;
+  text-transform: capitalize;
+}
+nav a:hover{
+  color: #8e44ad;
+}
+.active{
+  color: #8e44ad;
+}
+
+nav li a:nth-child(1)::before {
+  border-radius: 50%;
+  content: '\f015'; 
+  font-family: "fontAwesome";
+  font-size: 17px;
+}
+
+nav li a:nth-child(2)::before {
+  border-radius: 50%;
+  content: '\f015'; 
+  font-family: "fontAwesome";
+  font-size: 17px;
+}
+
+nav li a:nth-child(3)::before {
+  border-radius: 50%;
+  content: '\f015'; 
+  font-family: "fontAwesome";
+  font-size: 17px;
+}
+
+nav li a:nth-child(4)::before {
+  border-radius: 50%;
+  content: '\f015'; 
+  font-family: "fontAwesome";
+  font-size: 17px;
+}
+.slider {
+  display: flex;
+  flex-direction: column-reverse;
+}
+/* navbar styling ended */
 /*=================================
   Header styling ends here
 =================================*/  
