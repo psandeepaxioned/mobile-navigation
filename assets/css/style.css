@@ -100,12 +100,50 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 26.62%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
+header{
+  background-color: #b88acb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header{
+  position: relative;
+  border: 3px solid #fff;
+  border-radius: 15px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  flex-basis: 25%;
+  text-align: center;
+}
+nav {
+  font-size: 12px;
+}
+nav a {
+  text-transform: capitalize;
+  color: #777777;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+}
+ .home::before {
+  border-radius: 50%;
+  content: '\f015'; 
+  font-family: "fontAwesome";
+  font-size: 17px;
+  text-align: center;
+}
 
 
 
