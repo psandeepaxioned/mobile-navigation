@@ -10,7 +10,7 @@ listitems.forEach((item, idx) => {
     item.addEventListener('click', () => {
         hideallcontents()
         hideallitems()
-
+        
         item.classList.add('active')
         contents[idx].classList.add('active')
     })
