@@ -186,10 +186,10 @@ nav li a:nth-child(4)::before {
   display: flex;
   flex-direction: column-reverse;
 }
-img {
+.slider li{
   display: none;
 }
-img.active {
+.slider li.active {
   display: block;
 }
 /* navbar styling ended */
