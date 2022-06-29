@@ -1,8 +1,10 @@
 /* Author: 
 
 */
-const contents = document.querySelectorAll('.content')
+const contents = document.querySelectorAll('.slider li')
 const listitems = document.querySelectorAll('nav ul li a')
+
+console.log(contents, listitems);
 
 listitems.forEach((item, idx) => {
     item.addEventListener('click', () => {
@@ -10,12 +12,12 @@ listitems.forEach((item, idx) => {
         hideallitems()
 
         item.classList.add('active')
-        contents[idx].classList.add('show')
+        contents[idx].classList.add('active')
     })
 })
 
 function hideallcontents(){
-    contents.forEach(content => content.classList.remove('show'))
+    contents.forEach(slider => slider.classList.remove('active'))
 }
 
 function hideallitems(){
