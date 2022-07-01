@@ -187,10 +187,21 @@ nav li a:nth-child(4)::before {
   flex-direction: column-reverse;
 }
 .slider li{
-  display: none;
+  /* display: none; */
+  width: 0;
+  height: 0;
+  transform: scale(0);
+  transition: opacity 0.3s;
+  opacity: 0;
+  visibility: hidden;
 }
 .slider li.active {
-  display: block;
+  /* display: block; */
+  width: auto;
+  height: auto;
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
 }
 /* navbar styling ended */
 /*=================================
